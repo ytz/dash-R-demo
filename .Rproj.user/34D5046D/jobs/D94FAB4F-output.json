@@ -1,0 +1,7 @@
+[1,"Installing 'dashHtmlComponents' ...\n"]
+[2,"trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.1/dashHtmlComponents_1.0.3.tgz'\n"]
+[2,"Content type 'application/x-gzip' length 975836 bytes (952 KB)\n=========="]
+[2,"========================================\ndownloaded 952 KB\n\n"]
+[1,"The downloaded binary packages are in\n"]
+[1,"\t/var/folders/2w/n8r595491176tw12kpf5fvq00000gn/T//RtmpksdAM1/downloaded_packages\n"]
+[2,"\n\n✔ Package 'dashHtmlComponents' successfully installed.\n"]
