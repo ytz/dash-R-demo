@@ -77,5 +77,6 @@ app %>% set_layout(
   )
 )
 
-app$run_server(debug = T)
+app$run_server(host = '0.0.0.0')
+#app$run_server(debug = T)
 
