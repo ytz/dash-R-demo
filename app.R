@@ -13,7 +13,7 @@ url_geojson <- "https://raw.githubusercontent.com/UBC-MDS/cherry_blossom_tracker
 #geojson <- rjson::fromJSON(file=url_geojson)
 geojson <- rgdal::readOGR(url_geojson)
 #geojson <- geojson_read(url_geojson, what = "sp")
-geojson2 <- tidy(geojson, region = "name")
+geojson2 <- broom::tidy(geojson, region = "name")
 
 app = Dash$new(external_stylesheets = "https://codepen.io/chriddyp/pen/bWLwgP.css")
 
