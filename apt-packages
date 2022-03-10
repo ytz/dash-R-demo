@@ -1,3 +1,7 @@
 libcurl4-openssl-dev
 libxml2-dev
 libv8-3.14-dev
+gdal-bin 
+proj-bin 
+libgdal-dev 
+libproj-dev
