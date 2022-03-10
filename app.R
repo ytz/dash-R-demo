@@ -3,14 +3,16 @@ library(readr)
 library(plotly)
 library(ggplot2)
 library(broom)
-library(geojsonio)
+#library(geojsonio)
+library(rgdal)
 library(dplyr)
 
 # Input data
 df <- read_csv("data/processed_trees.csv")
 url_geojson <- "https://raw.githubusercontent.com/UBC-MDS/cherry_blossom_tracker/main/data/vancouver.geojson"
 #geojson <- rjson::fromJSON(file=url_geojson)
-geojson <- geojson_read(url_geojson, what = "sp")
+geojson <- rgdal::readOGR(url_geojson)
+#geojson <- geojson_read(url_geojson, what = "sp")
 geojson2 <- tidy(geojson, region = "name")
 
 app = Dash$new(external_stylesheets = "https://codepen.io/chriddyp/pen/bWLwgP.css")
